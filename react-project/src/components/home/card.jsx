@@ -26,6 +26,8 @@ export default function Card() {
 
   ];
   return (
+    <div className='container mx-auto'>
+      <h1 className='text-4xl font-bold text-center mt-10'>Our Products</h1>
     <div className='flex flex-row items-center justify-center gap-6 mt-10 mb-10 px-3'>
       {CardData.map((card, index) => (
         <div key={index} className=' border-1 rounded overflow-hidden shadow-lg w-70  p-2 text-center'>
@@ -35,6 +37,7 @@ export default function Card() {
           <CardButton />
         </div>
       ))}
+    </div>
     </div>
   )
 }
