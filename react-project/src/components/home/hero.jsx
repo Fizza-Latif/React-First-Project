@@ -8,7 +8,7 @@ export default function Hero() {
 >
   <div className="absolute inset-0 bg-gray-600/50"></div>
   
-  <h1 className="text-5xl mb-4 relative z-10">What are you looking for?</h1>
+  <h1 className="text-5xl text-white mb-4 relative z-10">What are you looking for?</h1>
     <p className="text-lg font-normal text-white max-w-xl relative z-10">
       Discover a world of products at unbeatable prices. Shop easily, safely.
     </p>
