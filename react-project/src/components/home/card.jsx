@@ -1,6 +1,5 @@
 import React from 'react'
 import CardButton from './cardbutton'
-
 export default function Card() {
   const CardData=[
     {
@@ -23,7 +22,6 @@ export default function Card() {
       description: "Classic and versatile shirts crafted for comfort and everyday wear.",
       imageUrl: "./images/shirts.jpg"
     }
-
   ];
   return (
     <div className='container mx-auto'>
