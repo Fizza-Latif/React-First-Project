@@ -8,12 +8,15 @@ import Loginform from "../components/home/usestate.jsx/loginform";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <Card  />
+      <Hero
+        title="What are you looking for?"
+        subtitle="Discover a world of products at unbeatable prices. Shop easily, safely."
+        image="./images/bg-img.jpg"
+      />
+      <Card />
       <Categories />
       <Newsletter />
       <Loginform />
-
     </div>
   );
 }

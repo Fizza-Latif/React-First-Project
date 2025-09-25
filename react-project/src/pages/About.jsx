@@ -1,10 +1,14 @@
 import React from 'react'
+import Hero from '../components/home/hero'
 
 export default function About() {
   return (
     <div>
-      <h1>About Us</h1>
-      <p>This is the about page of our website.</p>
+      <Hero 
+        title="Style That Moves With You"
+        subtitle="Born from a passion for timeless design and everyday comfort"
+        image="./images/about-bg.jpg"/>
+      
     </div>
   )
 }
