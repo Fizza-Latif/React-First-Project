@@ -26,11 +26,11 @@ export default function Navbar() {
           Contact
         </NavLink>
       </div>
-
-      {/* Button */}
-      <button className="bg-white text-blue-600 px-4 py-2 rounded">
-        Sign Up
-      </button>
+      {/* Sign In Button */}
+      <NavLink className=" px-4 py-2 rounded" to="/loginform" style={linkStyle}>
+          Sign in
+        </NavLink>
+      
     </nav>
   );
 }

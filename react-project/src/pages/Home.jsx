@@ -3,7 +3,7 @@ import Hero from "../components/home/hero";
 import Card from "../components/home/card";
 import Newsletter from "../components/home/newsletter";
 import Categories from "../components/home/categories";
-import Loginform from "../components/home/usestate.jsx/loginform";
+import Loginform from "../components/home/usestate/loginform";
 
 export default function Home() {
   return (

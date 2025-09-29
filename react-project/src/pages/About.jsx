@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/home/hero";
 import FeatureIntro from "../components/home/about/feature-intro";  
 import AboutCard from "../components/home/about/about-card";
+import AboutSection from "../components/home/about/about-section";
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
       subtitle2="Style, Comfort & More – Here’s Why You’ll Love Us" 
       />
       <AboutCard stagger/>
+      <AboutSection />
     </div>
   );
 }
