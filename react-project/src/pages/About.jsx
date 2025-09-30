@@ -18,6 +18,10 @@ export default function About() {
       />
       <AboutCard stagger/>
       <AboutSection />
+      <FeatureIntro 
+      title2="Our Purpose, Your Style" 
+      subtitle2="At S-Mart, everything we create starts with you — your lifestyle, your confidence, and your need for fashion that truly fits." 
+      />
     </div>
   );
 }

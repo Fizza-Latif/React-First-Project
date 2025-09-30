@@ -1,16 +1,23 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 
 export default function Loginform() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const handleSubmit = (e) => {
+  
+  const handleSubmit = async(e) => {
     e.preventDefault()
     const userData = { 
       username, 
       password 
     }
-    console.log( userData)
+    try {
+      const response = await axios.post('http://192.168.18.89:5000/api/login', userData)
+      console.log(response.data)
+    } catch (error) {
+      console.error('Error:', error)
+    }
   }
   return (
     <div className="p-6 md:w-1/3 w-full mx-auto border rounded-2xl shadow-md bg-white">

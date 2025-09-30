@@ -29,6 +29,20 @@ export const AboutCardsData = [
     description: "Inclusive fits and sizes designed to flatter all shapes, ages, and styles.",
   },
 ];
+export const AboutCardsData2 = [
+  {
+    id: 1,
+    icon: <RiTShirtAirLine size={60} />,
+    title: "Our Mission",
+    description: "To create timeless, high-quality fashion that blends comfort with confidence. We’re here to empower individuals of all ages and body types with clothing that fits seamlessly into real life — versatile, inclusive, and made to be lived in. We design with purpose, craft with care, and always put people first.",
+  },
+  {    id: 2,
+    icon: <RiShirtLine size={60} />,
+    title: "Our Vision",
+    description: "To become a trusted, global fashion destination that redefines modern essentials. We envision a world where style is accessible, self-expression is celebrated, and fashion feels effortless for everyone — from city streets to family weekends. At Velora, we aim to lead with creativity, integrity, and a deep understanding.",
+  },
+  
+]
 
 export const AboutSectionData=[
   {
@@ -38,4 +52,4 @@ export const AboutSectionData=[
     image: "./images/about-2.jpg",
     icon: < VscQuote size={60} />,
   }
-]
+];
