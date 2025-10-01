@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 export default function Loginform() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
   
   const handleSubmit = async(e) => {
     e.preventDefault()
@@ -13,8 +15,13 @@ export default function Loginform() {
       password 
     }
     try {
-      const response = await axios.post('http://192.168.18.89:5000/api/login', userData)
-      console.log(response.data)
+      const response = await axios.post('http://localhost/api/api/login.php', userData)
+      console.log('Response:', response.data)
+      
+      if(response.data.status === 'success') {
+        alert('Login successful!')
+        navigate('/')
+      }
     } catch (error) {
       console.error('Error:', error)
     }

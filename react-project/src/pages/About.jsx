@@ -3,6 +3,7 @@ import Hero from "../components/home/hero";
 import FeatureIntro from "../components/home/about/feature-intro";  
 import AboutCard from "../components/home/about/about-card";
 import AboutSection from "../components/home/about/about-section";
+import AboutCard2 from "../components/home/about/about-card2";
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
       title2="Our Purpose, Your Style" 
       subtitle2="At S-Mart, everything we create starts with you — your lifestyle, your confidence, and your need for fashion that truly fits." 
       />
+      <AboutCard2 />
     </div>
   );
 }
