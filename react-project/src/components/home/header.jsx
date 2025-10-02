@@ -1,7 +1,21 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink,useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const token = localStorage.getItem('token');
+  const [tokenState, setTokenState] = useState(localStorage.getItem('token'));
+  const navigate = useNavigate();
+  const handlelogout = () => {
+    if (token) {
+      localStorage.removeItem('token');
+      setTokenState(null);
+    }
+    else{
+      alert('You are not logged in');
+      navigate('/');
+    }
+  };
+
   const linkStyle = ({ isActive }) => ({
     fontWeight: isActive ? "bold" : "normal",
     textDecoration: isActive ? "underline" : "none",
@@ -27,10 +41,10 @@ export default function Navbar() {
         </NavLink>
       </div>
       {/* Sign In Button */}
-      <NavLink className=" px-4 py-2 rounded" to="/loginform" style={linkStyle}>
-          Sign in
-        </NavLink>
-      
+      <NavLink className=" px-4 py-2 rounded" to="/loginform" style={linkStyle} onClick={handlelogout}>
+        {token ? 'Logout' : 'Sign in'}
+      </NavLink>
+
     </nav>
   );
 }

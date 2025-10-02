@@ -21,9 +21,11 @@ export default function Loginform() {
       if(response.data.status === 'success') {
         alert('Login successful!')
         navigate('/')
+        localStorage.setItem('token', response.data.token)
+        
       }
     } catch (error) {
-      console.error('Error:', error)
+      console.error('Error:', error)  
     }
   }
   return (
